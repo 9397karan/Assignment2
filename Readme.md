@@ -26,7 +26,7 @@ Cohort YT is a web application that fetches and displays YouTube videos using an
 
 ## 🌐 Deployment
 This project is deployed and can be accessed here:
-🔗 [Live Demo](https://your-deployment-link.com)
+🔗 [Live Demo](https://9397karan.github.io/Assignment2/)
 
 ---
 
