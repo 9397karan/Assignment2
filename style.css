@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #012A4A;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.head {
+    background-color: #013A63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    color: aliceblue;
+}
+
+/* Search Section */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    width: 18vw;
+    height: 6vh;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: aliceblue;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    outline: none;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search button, .clear-btn {
+    height: 6vh;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Search Button */
+.search button {
+    background-color: #2C7DA0;
+}
+
+.search button:hover {
+    background-color: #468FAF;
+}
+
+/* Clear Button */
+.clear-btn {
+    background-color: #E63946;
+}
+
+.clear-btn:hover {
+    background-color: #D62828;
+}
+
+/* error */
+.err{
+    display: none;
+    color: #BCD4E6;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* Video Grid */
+.vid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    padding: 5%;
+    justify-content: start;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #014F86;
+    border: 1px solid #013A63;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Card Titles */
+.card h1, .card h2 {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.card h1 {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.card h2 {
+    font-size: 14px;
+    color: #BCD4E6;
+}
+
+/* Likes & Views */
+.card div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.card div p {
+    background-color: #468FAF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 14px;
+}
+
+/* Hides Elements */
+.invisible {
+    display: none;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .card:hover {
+        transform: scale(1);
+    }
+
+    .search {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search input {
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .search button, .clear-btn {
+        width: 50vw;
+        font-size: 16px;
+    }
+
+    .vid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
