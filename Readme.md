@@ -22,16 +22,7 @@ Cohort YT is a web application that fetches and displays YouTube videos using an
 - **JavaScript** - Fetch API, DOM manipulation, and event handling
 
 
-## 🔧 Setup and Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/cohort-yt.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd cohort-yt
-   ```
-3. Open `index.html` in your browser.
+
 
 ## 🌐 Deployment
 This project is deployed and can be accessed here:
